@@ -3,7 +3,7 @@
 This project implements a simple chatbot using Python and Redis. The chatbot provides an interface where users can interact with the bot, join channels, send messages, and receive messages. Additionally, users can request weather updates and fun facts, and they can identify themselves to the bot. 
 
 ## Features
-- User Identification: Users can identify themselves with a username, and store their age, gender, and location in the Redis database.
+- User Identification: Users can identify themselves with a username, and store their age, gender, and location in the Redis database. (Otis, Maeve, Eric...)
 - Channel Management: Users can join or leave channels. When a user sends a message to a channel, all users subscribed to that channel will receive the message.
 - Messaging: Users can send direct messages to the chatbot and read messages from channels they've joined.
 - Command Processing: The chatbot recognizes the following commands:
