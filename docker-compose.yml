@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  redis:
+    image: "redis:latest"
+    container_name: mp1
+    ports:
+      - "6379:6379"
+    volumes:
+      - "/Users/brych/Documents/Vanderbilt/Fall23/NoSql/MP1"
+
+  chatbot:
+    image: "python:3.8"
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python chatbot.py
+    depends_on:
+      - redis
+
+  redis_setup:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python redis_db.py
+    depends_on:
+      - redis
