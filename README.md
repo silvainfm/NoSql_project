@@ -1,6 +1,6 @@
 # Chatbot using Docker & Redis
 
-This project implements a simple chatbot using Python and Redis. The chatbot provides a text-based interface where users can interact with the bot, join channels, send messages, and receive messages. Additionally, users can request weather updates and fun facts, as well as identify themselves to the chatbot.
+This project implements a simple chatbot using Python and Redis. The chatbot provides an interface where users can interact with the bot, join channels, send messages, and receive messages. Additionally, users can request weather updates and fun facts, and they can identify themselves to the bot. 
 
 ## Features
 - User Identification: Users can identify themselves with a username, and store their age, gender, and location in the Redis database.
